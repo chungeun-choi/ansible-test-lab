@@ -14,8 +14,9 @@
 1.  레파지토리 클론
     
     ```bash
-    git clone 
+    git clone git@github.com:chungeun-choi/ansible-test-lab.git
     ```
+    
 2. '.env' 파일 생성
     ```
     vi ./.env
@@ -47,6 +48,5 @@
    > 
    > 해당 작업을 진행하지 않았을 때 앤서블을 통한 작업에 제한이 생길 수 있음에 따라 필수 적으로 진행하시길 바랍니다
 
-
-    
-
+---
+### ansible 예제 코드 실행
