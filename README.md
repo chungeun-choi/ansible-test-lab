@@ -16,19 +16,26 @@
     ```bash
     git clone 
     ```
-    
-2. **docker-compose 파일 실행**
+2. '.env' 파일 생성
+    ```
+    vi ./.env
+   ```
+   파일 내용
+   ```
+   PASS={VM 비밀번호 설정}
+   ```
+3. **docker-compose 파일 실행**
     
     ```bash
     docker-compose up -d
     ```
     
-3. **ssh 접속 확인 및 known_hosts에 public key 추가**
+4. **ssh 접속 확인 및 known_hosts에 public key 추가**
    
     ```bash
-    # VM1 ssh 접속 
+    # VM1 ssh 접속 명령어 실행 후 '.env' 파일에 명시한 비밀번호로 접속
     ssh root@localhost -p 220
-    # VM2 ssh 접속
+    # VM2 ssh 접속 명령어 실행 후 '.env' 파일에 명시한 비밀번호로 접속
     ssh root@localhost -p 221
     ```
     >💡 **public key 추가 방법**
