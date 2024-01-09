@@ -1,0 +1,25 @@
+version: '3.2'
+services:
+  vm1:
+    build:
+      args:
+        - PASS=$PASS
+    container_name: vm1
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 220:22
+
+  vm2:
+    build:
+      args:
+        - PASS=$PASS
+    container_name: vm2
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 221:22
