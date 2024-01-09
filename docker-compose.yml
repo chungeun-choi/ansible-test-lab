@@ -11,6 +11,7 @@ services:
         hard: -1
     ports:
       - 220:22
+      - 80:80
 
   vm2:
     build:
@@ -23,3 +24,4 @@ services:
         hard: -1
     ports:
       - 221:22
+      - 81:80
