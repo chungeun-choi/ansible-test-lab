@@ -4,11 +4,6 @@
   become: yes
 
   tasks:
-    - name: Install Apache package
-      apt:
-        name: apache2
-        state: present
-
     - name: Run Apache service
       service:
         name: apache2

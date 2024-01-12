@@ -1,0 +1,18 @@
+- name: Generate YAML file from Jinja template
+  hosts: localhost
+  vars:
+    server_host: "localhost"
+    server_port: 220
+    server_user: "root"
+    server_password: "test123"
+    server2_host: "localhost"
+    server2_port: 221
+    server2_user: "root"
+    server2_password: "test123"
+
+
+  tasks:
+    - name: Create YAML file from template
+      template:
+        src: config_template.yml.j2
+        dest: ./generate_inventory.yaml
