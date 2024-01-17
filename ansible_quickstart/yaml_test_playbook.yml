@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  name: This is play
+  gather_facts: false
+  tasks:
+  - name: "This is task-1"
+    shell: cat /etc/hosts
+    register: host
+
+  - name: "This is task-2"
+    debug:
+      msg: "{{ host.stdout }}"

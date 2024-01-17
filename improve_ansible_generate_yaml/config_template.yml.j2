@@ -1,0 +1,13 @@
+---
+servers:
+  hosts:
+    vm1:
+      ansible_host: "{{ server_host }}"
+      ansible_user: "{{ server_user }}"
+      ansible_password: "{{ server_password }}"
+      ansible_port: "{{ server_port }}"
+    vm2:
+      ansible_host: "{{ server2_host }}"
+      ansible_user: "{{ server2_user }}"
+      ansible_password: "{{ server2_password }}"
+      ansible_port: "{{ server2_port }}"
